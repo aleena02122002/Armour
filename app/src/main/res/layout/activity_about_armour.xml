@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AboutArmourActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Armour"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:paddingTop="10dp"
+        android:paddingStart="50dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n🛡️ Introducing Armour : Empowering Safety through Innovation 📲\n"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Armour is a concept of emergency application for safety purposes.Our paramount features epitomize our commitment to safeguarding lives.With a simple shake of the phone,Armour promptly dispatches SMS alerts containing the precise real-time location to designated contacts.\n\n
+Furthermore,Armour champions privacy and transparency. Through a meticulously designed functionality, users can selectively share their live location with chosen contacts.This feature not only fosters trust but also empowers guardians to monitor movements,fostering a sense of security even from afar."
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:paddingStart="10dp"
+        android:layout_below="@+id/textView2"/>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
